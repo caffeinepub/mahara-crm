@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Navy sidebar */
+    --navy: 0.21 0.054 222;
+    --navy-light: 0.26 0.048 222;
+    /* Teal accent */
+    --teal: 0.7 0.14 185;
+    --teal-light: 0.78 0.12 185;
+
+    /* Light mode tokens */
+    --background: 0.965 0.003 220;
+    --foreground: 0.18 0.012 264;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.012 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.012 264;
+    --primary: 0.7 0.14 185;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.95 0.004 220;
+    --secondary-foreground: 0.18 0.012 264;
+    --muted: 0.95 0.004 220;
+    --muted-foreground: 0.52 0.012 264;
+    --accent: 0.93 0.02 185;
+    --accent-foreground: 0.21 0.054 222;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    --border: 0.91 0.006 264;
+    --input: 0.91 0.006 264;
+    --ring: 0.7 0.14 185;
+    --chart-1: 0.7 0.14 185;
+    --chart-2: 0.6 0.12 200;
+    --chart-3: 0.65 0.13 192;
+    --chart-4: 0.55 0.15 185;
+    --chart-5: 0.45 0.16 180;
+    --sidebar: 0.21 0.054 222;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.7 0.14 185;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.28 0.044 222;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 0.3 0.04 222;
+    --sidebar-ring: 0.7 0.14 185;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bricolage Grotesque", "Plus Jakarta Sans", system-ui,
+      sans-serif;
+  }
+}
